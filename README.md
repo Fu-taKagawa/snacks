@@ -21,6 +21,7 @@ npm install --global yarn
 ```bash
 git clone https://github.com/Fu-taKagawa/snacks.git
 cd snacks
+docker-compose build
 yarn install
 docker-compose up
 ```
