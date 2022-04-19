@@ -20,9 +20,9 @@ npm install --global yarn
 # Usage
 ```bash
 git clone https://github.com/Fu-taKagawa/snacks.git
-cd snacks
+cd snacks/reactapp
+npm install react-scripts
 docker-compose build
-yarn install
 docker-compose up
 ```
  
