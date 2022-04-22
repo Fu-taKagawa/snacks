@@ -22,6 +22,7 @@ npm install --global yarn
 git clone https://github.com/Fu-taKagawa/snacks.git
 cd snacks/reactapp
 npm install react-scripts
+npm install react-router-dom@5.2.0
 docker-compose build
 docker-compose up
 ```
