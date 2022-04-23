@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.initialBox{
+  width: 30%;
+  border: solid 3px #000;
+  position: relative;
+  top: 300px;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+}
