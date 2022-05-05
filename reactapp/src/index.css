@@ -12,6 +12,28 @@ code {
     monospace;
 }
 
+
+
+.sp-only{
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    .sp-only{
+        display: block;
+    }
+}
+
+.pc-only{
+    display: inline;
+}
+
+@media screen and (max-width: 767px){
+    .pc-only{
+        display: none;
+    }
+}
+
 .initialBox{
   width: 30%;
   border: solid 3px #000;
@@ -20,4 +42,14 @@ code {
   text-align: center;
   margin: auto;
   padding: 20px;
+}
+
+.initialBox div{
+  padding-bottom: 15px;
+}
+
+@media (max-width: 959px) {
+  .initialBox{
+    width: 75%;
+  }
 }

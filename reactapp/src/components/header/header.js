@@ -7,7 +7,7 @@ export const Header =()=>{
     const user = useContext(AuthContext);
     return(
         <header>
-            <h1 className="title">React-app</h1>
+            <h1 className="title">Share Me Snacks!</h1>
             <div className="menu-item">
                 <a
                     className="LogoutBtn"

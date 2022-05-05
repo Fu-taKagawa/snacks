@@ -51,9 +51,13 @@ export const Login = ({history}) => {
                             onChange={e => setPassword(e.target.value)}
                         />
                     </div>
-                    <button type='submit'>Login</button>
+                    <button 
+                        type='submit'
+                        className='btn'
+                    ><span>Login</span></button>
                 </form>
                 <Link to="/signup">sign up</Link>
+                <p>👆登録がまだの方はこちらから！👆</p>
             </div>
         </>
     )
