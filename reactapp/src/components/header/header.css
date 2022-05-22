@@ -1,0 +1,29 @@
+header{
+    width: 100%;
+    background: rgb(155, 151, 36);
+}
+
+.headerMenu{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerMenu h1{
+    color: #fff;
+}
+
+.headerMenu__item{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerMenu__item li,
+.headerMenu__item a{
+    color: #fff;
+    margin: 0 20px;
+}

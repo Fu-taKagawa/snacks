@@ -12,7 +12,13 @@ code {
     monospace;
 }
 
+a{
+  text-decoration: none;
+}
 
+li{
+    list-style: none;
+}
 
 .sp-only{
     display: none;
@@ -48,8 +54,55 @@ code {
   padding-bottom: 15px;
 }
 
+.initialbox input{
+  width: 80%;
+}
+
 @media (max-width: 959px) {
   .initialBox{
     width: 75%;
   }
+}
+
+
+/* トップページの記事スタイル */
+.postArea{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.postItem{
+    width: 450px;
+    border: solid 1px #000;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 767px){
+    .postItem{
+        width: 100%;
+    }
+}
+
+.postItem__user{
+    padding-left: 20px;
+    border-bottom: solid 1px #000;
+}
+
+.postItem__textbox{
+    padding-left: 20px;
+    white-space: pre-wrap;
+}
+
+/* 記事投稿ページのスタイル */
+.postForm__text{
+    width: 70%;
+    height: 200px;
+}
+
+.postTop{
+    text-align: right;
 }
