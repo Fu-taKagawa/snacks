@@ -29,7 +29,7 @@ const Home=()=>{
                             <li className='postItem'>
                                 <div className='postTop'>
                                     <Link 
-                                        to={'/postEdit'}
+                                        to={'/PostEdit'}
                                         onClick={()=>{
                                             const postId = firebase.firestore().collection('posts').doc(`${posts.id}`).id
                                             firebase.firestore().collection('postEdit').doc(`${postId}`)

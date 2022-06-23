@@ -79,7 +79,7 @@ const Form=({addPost})=>{
     return(
         <>
             <Header/>
-            <Link to={'/'}>戻る</Link>
+            <Link to={'/'}>トップページへ戻る</Link>
             <div className='body'>
                 <div className="App">
                     <h1>画像アップロード</h1>
