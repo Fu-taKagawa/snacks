@@ -26,11 +26,12 @@ export const Login = ({history}) => {
 
     return (
         <>
-            <div class="initialBox">
+            <div className="initialBox">
                 <h1>Login</h1>        
                 <form onSubmit={handleSubmit}>
-                    <div>
+                    <div className=''>
                         <label htmlFor='email'>E-mail</label>
+                        <br />
                         <input
                             type='email' 
                             id='email' 
@@ -42,9 +43,10 @@ export const Login = ({history}) => {
                     </div>
                     <div>
                         <label htmlFor='password'>Password</label>
+                        <br />
                         <input 
-                            type='password' 
-                            id='password' 
+                            type='password'
+                            id='password'
                             name='password'
                             placeholder='password'
                             value={password}

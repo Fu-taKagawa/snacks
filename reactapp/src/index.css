@@ -12,7 +12,13 @@ code {
     monospace;
 }
 
+a{
+  text-decoration: none;
+}
 
+li{
+    list-style: none;
+}
 
 .sp-only{
     display: none;
@@ -48,8 +54,107 @@ code {
   padding-bottom: 15px;
 }
 
+.initialbox input{
+  width: 80%;
+}
+
 @media (max-width: 959px) {
   .initialBox{
     width: 75%;
   }
+}
+
+
+/* トップページの記事スタイル */
+.postArea{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.postItem{
+    width: 450px;
+    border: solid 1px #000;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 767px){
+    .postItem{
+        width: 100%;
+    }
+}
+
+.postItem__user{
+    padding-left: 20px;
+    border-bottom: solid 1px #000;
+}
+
+.postItem__textbox{
+    padding-left: 20px;
+    white-space: pre-wrap;
+}
+
+/* 記事投稿ページのスタイル */
+.postForm__text{
+    width: 70%;
+    height: 200px;
+}
+
+.postTop{
+    text-align: right;
+}
+
+/* 編集ページのスタイル */
+#open,
+#close {
+    cursor: pointer;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    padding: 12px;
+    margin: 16px auto 0;
+    background: #4caf50;
+    color: white;
+}
+
+#mask {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#modal {
+    background: #fff;
+    color: #555;
+    width: 300px;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow : 0px 0px 18px 1px #cccccc ;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+    text-align: center;
+}
+
+#modal p {
+    margin: 0 0 20px;
+}
+
+#mask.hidden {
+    display: none;
+}
+
+#modal.hidden {
+    display: none;
 }
